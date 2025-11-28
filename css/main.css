@@ -435,6 +435,9 @@ body {
   .overview ._order-l-2 .overview-img__wrap img{
     filter: drop-shadow(100px 100px 200px rgba(0, 32, 96, 0.4));
   }
+  .overview ._order-l-2 .overview-img__wrap{
+    margin-left: auto;
+  }
   .overview ._order-l-1{
     order: 1;
   }
