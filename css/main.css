@@ -719,12 +719,8 @@ body {
     cursor: grab;
 }
 .swiperWay .swiper-pagination{
-    right: auto!important;
-    left: auto!important;
-    top: auto!important;
-    transform: none!important;
-    bottom: 0;
     display: flex;
+    justify-content: center;
     gap: 7px;
     background-color: #101111;
     width: 100%;
@@ -744,13 +740,14 @@ body {
   display: flex;
   gap: 64px;
   width: 100%;
+  padding-top: 20px;
   padding-bottom: 70px;
   position: relative;
 }
 .way-item:before{
     content: "";
     position: absolute;
-    top: 72px;
+    top: 91px;
     width: 1px;
     height: calc(100% - 90px);
     background-color: rgba(255, 255, 255, 0.149);
@@ -758,6 +755,9 @@ body {
 }
 .way-item:last-of-type:before{
   height: 50px;
+}
+.way-item__content{
+  width: 100%;
 }
 .way-item__num{
   flex-shrink: 0;
@@ -801,25 +801,16 @@ color: rgba(255, 255, 255, 0.8);
     margin-top: 0px;
     padding-top: 58px;
     padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .way-title{
     font-size: 66px;
+    margin-bottom: 20px;
   }
   .way-item{
     gap: 50px;
   }
   .swiperWay {
     padding-bottom: 24px;
-    width: calc(100% + 50px);
-    margin-left: -25px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .swiperWay .swiper-pagination{
-    justify-content: center;
-    left: 0!important;
   }
  
 }
