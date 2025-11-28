@@ -1,0 +1,125 @@
+/* LOGOS */
+._logo{
+    max-width: 211px;
+    width: 100%;
+}
+@media (max-width: 1199px) {
+  ._logo {
+        max-width: 170px;
+    }
+}
+@media (max-width: 991px) {
+  ._logo {
+        max-width: 106px;
+    }
+}
+
+/* HEADING */
+h1, ._h1{
+    font-weight: 700;
+    font-size: 88px;
+    line-height: 91%;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 44px;
+}
+h2, ._h2{
+font-weight: 700;
+font-size: 80px;
+line-height: 91%;
+margin-bottom: 50px;
+}
+h3, ._h3{
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 95%;
+    letter-spacing: -1px;
+    margin-bottom: 25px;
+}
+@media (max-width: 1199px) {
+  h1, ._h1 {
+    font-size: 76px;
+   }
+}
+@media (max-width: 767px) {
+    h1, ._h1{
+    font-size: 48px;
+   }
+   h2, ._h2{
+    margin-bottom: 25px;
+    font-size: 44px;
+   }
+   h3, ._h3{
+    font-size: 44px;
+   }
+}
+
+/* APPS  */
+._apps{
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: fit-content;
+}
+._apps a{
+  max-width: 194px;
+  position: relative;
+}
+._apps a:hover{
+  transform: scale(0.9);
+}
+._apps a img{
+  border-radius: 10px;
+  border: solid 1px;
+}
+._apps .rustore{
+  border-color: #000;
+}
+._apps .appstore{
+  border-color: #fff;
+}
+@media (max-width: 576px) {
+    ._apps{
+        gap: 5px;
+    }
+}
+
+/* SPRITE */
+._sprite{
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--green);
+}
+._sprite svg, ._sprite img{
+    max-width: 21px;
+}
+
+/* BUTTONS */
+._primaryBtn{
+    font-family: "Sofia Sans Extra Condensed", sans-serif;
+    display: inline-block;
+    text-align: center;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+    padding: 23px 40px;
+    background: var(--green);
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 80px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+._primaryBtn:hover{
+    color: #fff;
+    background-color: rgba(8, 192, 106, 0.7);
+}
